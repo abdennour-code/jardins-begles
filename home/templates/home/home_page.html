@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 30px; background-color: #f4f7f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: #2e4a3f;">
+    
+    <!-- Menu de Navigation -->
+    <nav style="margin-bottom: 30px; text-align: right;">
+        <a href="/" style="text-decoration: none; color: #1e352f; font-weight: bold; margin-right: 20px; border-bottom: 2px solid #2e4a3f; padding-bottom: 4px;">Accueil</a>
+        <a href="/le-jardin/" style="text-decoration: none; color: #5a786b; font-weight: bold; margin-right: 20px; transition: 0.3s;">Le jardin</a>
+        <a href="/contact/" style="text-decoration: none; color: #5a786b; font-weight: bold; transition: 0.3s;">Contact</a>
+    </nav>
+
+    <h1 style="color: #1e352f; font-size: 2.5em; margin-top: 0; padding-bottom: 15px; border-bottom: 3px solid #a3b899;">🌱 {{ page.title }}</h1>
+    
+    <p style="font-size: 1.2em; line-height: 1.8; text-align: justify; color: #3a5c4e; margin-top: 25px;">
+        Les Jardins Partagés de Bègles rassemblent des habitant·e·s du quartier autour d’un même potager collectif. 
+        Depuis 2019, nous cultivons légumes et convivialité, ensemble, sans pesticides, ouverts à tous les âges et tous les niveaux d’expérience.
+    </p>
+    
+    <div style="margin-top: 40px; text-align: center;">
+        <a href="/le-jardin/" style="text-decoration: none; background-color: #2e4a3f; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">Découvrir notre jardin →</a>
+    </div>
+</div>
+{% endblock content %}
