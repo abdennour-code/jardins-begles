@@ -1,24 +1,26 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 30px; background-color: #f4f7f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: #2e4a3f;">
-    
-    <!-- Menu de Navigation -->
-    <nav style="margin-bottom: 30px; text-align: right;">
-        <a href="/" style="text-decoration: none; color: #5a786b; font-weight: bold; margin-right: 20px;">Accueil</a>
-        <a href="/le-jardin/" style="text-decoration: none; color: #1e352f; font-weight: bold; margin-right: 20px; border-bottom: 2px solid #2e4a3f; padding-bottom: 4px;">Le jardin</a>
-        <a href="/contact/" style="text-decoration: none; color: #5a786b; font-weight: bold;">Contact</a>
+<div class="container">
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/le-jardin/" class="active">Le jardin</a>
+        <a href="/contact/">Contact</a>
     </nav>
 
-    <h1 style="color: #1e352f; font-size: 2.5em; margin-top: 0; padding-bottom: 15px; border-bottom: 3px solid #a3b899;">🥕 {{ page.title }}</h1>
+    <h1>🥕 {{ page.title }}</h1>
     
-    <p style="font-size: 1.2em; line-height: 1.8; text-align: justify; color: #3a5c4e; margin-top: 25px;">
-        Notre jardin s’étend sur 400m², avec une vingtaine de parcelles individuelles et un espace collectif. 
+    <!-- On intègre ici votre image de ciboulette avec le panneau en bois -->
+    <img src="{% static 'images/ciboulette.png' %}" alt="Nos parcelles de ciboulette" class="jardin-img">
+
+    <p>
+        Notre jardin s’étend sur 400m², avec une vien-gtaine de parcelles individuelles et un espace collectif. 
         Chaque membre peut cultiver sa propre parcelle, participer aux récoltes communes, ou simplement venir donner un coup de main le samedi matin.
     </p>
 
-    <div style="margin-top: 40px; text-align: center;">
-        <a href="/contact/" style="text-decoration: none; background-color: #2e4a3f; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">Nous rejoindre ✉️</a>
+    <div style="text-align: center;">
+        <a href="/contact/" class="btn">Nous rejoindre ✉️</a>
     </div>
 </div>
 {% endblock content %}

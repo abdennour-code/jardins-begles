@@ -1,0 +1,90 @@
+/* Style Global - Les Jardins Partagés de Bègles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fafdfb;
+    margin: 0;
+    padding: 0;
+    color: #2e4a3f;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eef3f0;
+}
+
+nav {
+    margin-bottom: 35px;
+    text-align: right;
+    border-bottom: 1px solid #eef3f0;
+    padding-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5a786b;
+    font-weight: 600;
+    margin-left: 25px;
+    font-size: 1.05em;
+}
+
+nav a:hover {
+    color: #1e352f;
+}
+
+nav a.active {
+    color: #1e352f;
+    border-bottom: 3px solid #2e4a3f;
+    padding-bottom: 14px;
+}
+
+h1 {
+    color: #1e352f;
+    font-size: 2.4em;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #3a5c4e;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2e4a3f;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(46, 74, 63, 0.2);
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #1e352f;
+}
+
+.contact-box {
+    background: #f4f7f5;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #2e4a3f;
+    margin-top: 25px;
+}
+
+.jardin-img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}

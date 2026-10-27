@@ -1,26 +1,25 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 30px; background-color: #f4f7f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: #2e4a3f;">
-    
-    <!-- Menu de Navigation -->
-    <nav style="margin-bottom: 30px; text-align: right;">
-        <a href="/" style="text-decoration: none; color: #5a786b; font-weight: bold; margin-right: 20px;">Accueil</a>
-        <a href="/le-jardin/" style="text-decoration: none; color: #5a786b; font-weight: bold; margin-right: 20px;">Le jardin</a>
-        <a href="/contact/" style="text-decoration: none; color: #1e352f; font-weight: bold; border-bottom: 2px solid #2e4a3f; padding-bottom: 4px;">Contact</a>
+<div class="container">
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/le-jardin/">Le jardin</a>
+        <a href="/contact/" class="active">Contact</a>
     </nav>
 
-    <h1 style="color: #1e352f; font-size: 2.5em; margin-top: 0; padding-bottom: 15px; border-bottom: 3px solid #a3b899;">📩 {{ page.title }}</h1>
+    <h1>📩 {{ page.title }}</h1>
     
-    <p style="font-size: 1.2em; line-height: 1.8; color: #3a5c4e; margin-top: 25px; margin-bottom: 30px;">
+    <p>
         Pour nous rejoindre ou simplement venir visiter, contactez-nous :
     </p>
     
-    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 5px solid #2e4a3f; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+    <div class="contact-box">
         <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 1.15em; line-height: 2.2;">
-            <li><strong style="color: #1e352f;">📧 Email :</strong> <a href="mailto:contact@://exemple.com" style="color: #43705d; text-decoration: none; font-weight: 500;">contact@://exemple.com</a></li>
-            <li><strong style="color: #1e352f;">📍 Adresse :</strong> Allée des Jardiniers, 33130 Bègles</li>
-            <li><strong style="color: #1e352f;">📅 Permanence :</strong> tous les samedis de 10h à 12h</li>
+            <li><strong>📧 Email :</strong> <a href="mailto:contact@://exemple.com" style="color: #2e4a3f; text-decoration: none;">contact@://exemple.com</a></li>
+            <li><strong>📍 Adresse :</strong> Allée des Jardiniers, 33130 Bègles</li>
+            <li><strong>📅 Permanence :</strong> tous les samedis de 10h à 12h</li>
         </ul>
     </div>
 </div>
